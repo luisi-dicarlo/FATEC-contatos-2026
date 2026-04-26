@@ -6,26 +6,19 @@
 
 ---
 
-## Contexto
-Este repositório foi preparado como base de atividade prática.
-A ideia e praticar a integracao entre Front-end e API REST usando JavaScript puro (sem frameworks).
+## Sobre o Projeto
+Aplicação front-end em JavaScript puro que consome uma API REST de contatos, permitindo realizar operações de CRUD:
 
-Nesta etapa, a camada de servico da API ja esta pronta no projeto.
-Cada aluno deve dar fork neste repositorio e complementar a parte de interface e integracao no navegador.
-
-## Objetivo da Atividade
-Construir um front-end funcional para consumir a API de contatos, aplicando os conceitos de:
-- arquitetura cliente-servidor
-- requisicoes HTTP
-- CRUD
-- manipulacao de DOM
-- organizacao de codigo em modulos
+- Listar contatos (GET)
+- Criar contato (POST)
+- Atualizar contato (PUT)
+- Deletar contato (DELETE)
 
 ## API da Atividade
 Endpoint base:
 - https://bakcend-fecaf-render.onrender.com/contatos
 
-Modelo de dados esperado:
+Modelo de dados usado:
 
 ```json
 {
@@ -45,69 +38,39 @@ Modelo de dados esperado:
 - app.js
 - contatos.js
 
-Observacao:
-- O arquivo contatos.js ja possui as funcoes de acesso a API (CRUD).
-- O desafio e os alunos criarem o layout e integrarem a interface com essas funcoes.
-- O aluno pode criar novos arquivos HTML, CSS e JS se achar necessario, mas nao pode excluir os arquivos base existentes.
+## Tecnologias utilizadas
+- HTML5
+- CSS3
+- JavaScript (ES Modules)
+- Fetch API
 
-## O que cada aluno deve fazer
-1. Criar o HTML funcional (formulario e area de listagem).
-2. Criar o CSS para organizar o layout.
-3. Implementar no app.js a integracao com as funcoes do contatos.js.
-4. Exibir lista de contatos na tela (GET).
-5. Cadastrar novo contato via formulario (POST).
-6. Atualizar contato existente (PUT).
-7. Deletar contato (DELETE).
+## Funcionalidades
+- Interface com formulário e listagem de contatos
+- Integração com API REST
+- Manipulação de DOM
+- Tratamento básico de erros
+- Preenchimento automático de endereço via API ViaCEP (bônus)
 
-### Requisitos tecnicos
-- Usar JavaScript puro (sem React, Vue, Angular etc.).
+### Requisitos tecnicos considerados
+- Usar JavaScript puro.
 - Usar modulos ES (import/export).
 - Usar async/await.
 - Tratar erros de requisicao de forma visivel para o usuario.
 - Renderizar imagem do contato via URL (campo foto).
 
-## Escopo Obrigatorio
-- CRUD completo: GET, POST, PUT e DELETE
-
-## Escopo Extra (bonus)
-- Melhorias de UX (mensagens, estados de carregamento, validacoes adicionais)
-
-## Instrucoes de Fork e Entrega
-1. Fazer fork deste repositorio para sua conta.
-2. Clonar seu fork localmente.
-3. Criar sua implementacao no HTML, CSS e app.js.
-4. Fazer commits com mensagens claras.
-5. Publicar no seu repositorio.
-6. Enviar o link do fork como issue em: https://github.com/fernandoleonid/FATEC-atividades-Programa-o-de-S-tios-Internet-1-2026
-
-![Exemplo de Issue](./issue.jpg)
-
 ## Checklist do Aluno
-- [ ] Fiz o fork do repositorio.
-- [ ] Fiz commits a cada funcionalidade (ou pelo menos um para cada aula).
-- [ ] Meu projeto abre sem erros no navegador.
-- [ ] Consigo listar contatos da API.
-- [ ] Consigo cadastrar novo contato.
-- [ ] Consigo atualizar contato da API.
-- [ ] Consigo deletar contato da API.
-- [ ] Minha interface possui formulario e listagem.
-- [ ] Meu codigo esta organizado e legivel.
-- [ ] Nao exclui os arquivos base do repositorio.
+- [x] Fiz o fork do repositorio.
+- [x] Fiz commits a cada funcionalidade (ou pelo menos um para cada aula).
+- [x] Meu projeto abre sem erros no navegador.
+- [x] Consigo listar contatos da API.
+- [x] Consigo cadastrar novo contato.
+- [x] Consigo atualizar contato da API.
+- [x] Consigo deletar contato da API.
+- [x] Minha interface possui formulario e listagem.
+- [x] Meu codigo esta organizado e legivel.
+- [x] Nao exclui os arquivos base do repositorio.
 - [ ] Entreguei o link do repositorio.
 
 ---
 
-## Pontuação
-Esta atividade valerá **1 ponto na P2** caso:
-- O projeto esteja funcionando (CRUD completo).
-- Os commits sejam feitos a cada funcionalidade ou, no mínimo, um para cada aula.
-
----
-
-## Suporte e Dúvidas
-Qualquer dúvida sobre a atividade ou dificuldade técnica, entre em contato com o professor Fernando Leonid através do repositório principal:
-
-
-Bom trabalho!
-
-# FATEC-contatos-2026
+Luísi Di Carlo Santinelli Carneiro
