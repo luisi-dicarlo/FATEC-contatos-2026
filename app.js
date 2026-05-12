@@ -1,3 +1,7 @@
+'use strict'
+
+let imagemBase64 = ""
+
 import {
   getContatos,
   criarContato,
@@ -9,6 +13,27 @@ const form = document.getElementById("form-contato")
 const lista = document.getElementById("lista-contatos")
 
 let editandoId = null
+
+function preview({ target }) {
+
+  const file = target.files[0]
+
+  if (!file) return
+
+  const previewImage = document.getElementById('preview-image')
+
+  previewImage.src = URL.createObjectURL(file)
+
+  previewImage.style.display = 'block'
+
+  const reader = new FileReader()
+
+  reader.onloadend = () => {
+    imagemBase64 = reader.result
+  }
+
+  reader.readAsDataURL(file)
+}
 
 // LISTAR
 async function carregarContatos() {
@@ -52,7 +77,7 @@ form.addEventListener("submit", async (e) => {
   const contato = {
     nome: nome.value,
     celular: celular.value,
-    foto: foto.value,
+    foto: imagemBase64,
     email: email.value,
     endereco: endereco.value,
     cidade: cidade.value

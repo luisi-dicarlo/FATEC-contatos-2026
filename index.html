@@ -28,15 +28,26 @@
         </div>
 
         <div class="row">
+
             <div class="inputbox">
                 <label>Email</label>
                 <input type="email" id="email">
             </div>
 
             <div class="inputbox">
-                <label>URL da Foto</label>
-                <input type="text" id="foto">
+
+                <label>Foto</label>
+
+                <label class="upload-label" for="foto">
+                    Escolher Foto
+                </label>
+
+                <input type="file" id="foto" accept="image/*" hidden>
+
+                <img id="preview-image" src="https://via.placeholder.com/120">
+
             </div>
+
         </div>
 
         <div class="row">

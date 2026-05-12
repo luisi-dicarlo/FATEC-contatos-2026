@@ -69,7 +69,7 @@ Modelo de dados usado:
 - [x] Minha interface possui formulario e listagem.
 - [x] Meu codigo esta organizado e legivel.
 - [x] Nao exclui os arquivos base do repositorio.
-- [ ] Entreguei o link do repositorio.
+- [x] Entreguei o link do repositorio.
 
 ---
 

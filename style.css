@@ -122,3 +122,31 @@ button:hover {
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 15px;
 }
+
+/* UPLOAD */
+.upload-label {
+    background-color: var(--primary-color);
+    color: black;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.upload-label:hover {
+    opacity: 0.9;
+}
+
+#preview-image {
+    display: none;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 3px solid var(--primary-color);
+    background-color: white;
+    margin-top: 10px;
+    align-self: center;
+}
